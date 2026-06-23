@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Gaby</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+
+background:#101114;
+color:#ececec;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+
+}
+
+.container{
+
+max-width:800px;
+width:100%;
+
+}
+
+.card{
+
+background:#181a1f;
+border:1px solid #2d2f36;
+border-radius:20px;
+padding:35px;
+box-shadow:0 0 30px rgba(0,0,0,.35);
+
+}
+
+h1{
+
+text-align:center;
+font-size:38px;
+font-weight:300;
+margin-bottom:15px;
+
+}
+
+.sub{
+
+text-align:center;
+color:#9ca3af;
+margin-bottom:35px;
+
+}
+
+.botao{
+
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:12px;
+background:#24262d;
+color:white;
+cursor:pointer;
+font-size:16px;
+transition:.3s;
+
+}
+
+.botao:hover{
+
+background:#30333c;
+
+}
+
+.texto{
+
+display:none;
+margin-top:25px;
+line-height:1.9;
+font-size:17px;
+color:#d5d5d5;
+animation:aparecer .5s;
+
+}
+
+footer{
+
+margin-top:35px;
+text-align:center;
+color:#777;
+
+}
+
+@keyframes aparecer{
+
+from{
+
+opacity:0;
+transform:translateY(15px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Para você, Gaby.</h1>
+
+<p class="sub">
+Um lugar simples, feito apenas para lembrar o quanto você é importante.
+</p>
+
+<button class="botao" onclick="abrir('t1')">
+O que eu queria que você soubesse
+</button>
+
+<div class="texto" id="t1">
+
+Nem sempre eu consigo colocar em palavras tudo o que passa pela minha cabeça durante a semana.
+
+A rotina de trabalho acaba sendo pesada. Tem dias em que o cansaço muda completamente meu humor, me deixa mais quieto e faz parecer que eu estou distante.
+
+Mas existe uma diferença muito grande entre estar cansado e deixar de sentir sua falta.
+
+Porque isso nunca acontece.
+
+Em praticamente todos os dias eu penso em como seria bom conversar com você por alguns minutos, ouvir sua voz e esquecer um pouco do peso que a rotina coloca nas costas.
+
+Você acaba sendo um dos pensamentos que mais aparecem durante o meu dia.
+
+</div>
+
+<button class="botao" onclick="abrir('t2')">
+O jeito que eu vejo você
+</button>
+
+<div class="texto" id="t2">
+
+Você é bonita de um jeito difícil de explicar.
+
+Não porque alguém disse.
+
+Não porque existe um padrão.
+
+Mas porque você consegue transmitir calma até quando nem percebe.
+
+Seu sorriso, seu olhar, sua maneira de falar e até os pequenos detalhes fazem você ser especial.
+
+É uma beleza que vai muito além da aparência.
+
+É a pessoa que você é.
+
+E isso faz toda a diferença.
+
+</div>
+
+<button class="botao" onclick="abrir('t3')">
+As nossas ligações
+</button>
+
+<div class="texto" id="t3">
+
+Uma das coisas que eu mais gosto é passar horas em ligação com você.
+
+Mesmo quando estamos jogando, rindo ou simplesmente em silêncio.
+
+Sua voz consegue transformar um dia cansativo em um momento muito mais leve.
+
+Às vezes eu fico pensando que nem preciso de grandes acontecimentos.
+
+Só de saber que você está ali conversando comigo já faz o dia valer mais a pena.
+
+São momentos simples, mas que acabam ficando guardados como algumas das melhores lembranças.
+
+</div>
+
+<button class="botao" onclick="abrir('t4')">
+Uma última mensagem
+</button>
+
+<div class="texto" id="t4">
+
+Se algum dia você abrir esta página enquanto estiver cansada, triste ou achando que não está bem...
+
+Quero que lembre de uma coisa.
+
+Você não precisa ser perfeita.
+
+Você não precisa acertar tudo.
+
+Você não precisa carregar o mundo inteiro nas costas.
+
+Continue sendo quem você é.
+
+Porque é exatamente essa pessoa que eu admiro.
+
+Espero que seus dias sejam leves.
+
+E mesmo quando a rotina estiver difícil para nós dois...
+
+Saiba que sentir sua falta continua fazendo parte dos meus dias.
+
+Obrigado por existir.
+
+❤️
+
+</div>
+
+<footer>
+
+Feito com carinho.
+
+</footer>
+
+</div>
+
+</div>
+
+<script>
+
+function abrir(id){
+
+const texto=document.getElementById(id);
+
+texto.style.display=
+texto.style.display=="block"
+?
+"none"
+:
+"block";
+
+}
+
+</script>
+
+</body>
+</html>
